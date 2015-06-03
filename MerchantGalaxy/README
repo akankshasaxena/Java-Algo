@@ -1,0 +1,29 @@
+Merchant's Guide to the Galaxy
+
+Design Specification & Assumption -
+
+This program contains two main reusable modules , First converts from Roman to Number. This is done by using Map interface which holds the basic conversion between Roman Numerals & Integer Numbers. This is acheived by using TreeMap whose capability of providing sort on values is used. A ValueComparator class is been created which implements the logic of sorting.
+Second problem of conversion from intergalactia units to Integer is acheived by creating another module which inherently calls first module. Second module is a 2 step process in which firstly intergalactia units are converted into Roman and then roman and metal currency converted into equavalent number(credits).
+
+Assumptions - 
+roman equivalent text would not occur after mentioning Metal Name.
+like glob glob Silver glob is a invalid string for conversion.
+
+
+How To Run-
+1) - Compile the Classes -
+
+	$ javac ValueComparator.java MerchantGalaxy.java 
+
+2) - A test file named as Test is provided within the project which contains test inputs.
+3) - This programs can be run from command prompt either by specifying the file like below :
+
+	$ java MerchantGalaxy < Test
+
+4) - or Giving the direct input from command line after running following command, Each line will be terminated by pressing Enter , after which the result will be displayed:
+
+	$ java MerchantGalaxy 
+
+CONSOLE : glob glob Silver
+	  34 Credits
+
