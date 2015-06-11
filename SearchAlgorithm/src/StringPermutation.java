@@ -3,9 +3,9 @@ public class StringPermutation {
 	public void printPerm(String str, String buff, int beginIndex, int len) {
 		if (beginIndex < len) {
 
-			printPerm(str, buff + str.charAt(beginIndex), beginIndex + 1, len);
+			printPerm(str, buff+str.charAt(beginIndex), beginIndex + 1, len);
 		    if (beginIndex != len - 1)
-			printPerm(str, buff + str.charAt(beginIndex) + " ", beginIndex + 1,
+			printPerm(str, buff+str.charAt(beginIndex) + " ", beginIndex + 1,
 					len);
 		} else {
 			System.out.println(buff);
