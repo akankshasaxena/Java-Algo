@@ -1,6 +1,7 @@
 package Random;
 /**
- * 
+ * Given MxN matrix with sorted elements row wise and column wise, find the Kth largest element
+ * Solution - By MAXHEAP
  * @author akanksha
  *THis class find out kth smallest element in 2-D array
  */
